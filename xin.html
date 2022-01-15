@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跳动的心</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .xin {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            left: 50px;
+            top: 50px;
+            animation: jump .5s infinite alternate;
+
+        }
+
+        @keyframes jump {
+            0% {
+                transform: scale(1.0);
+            }
+
+            100% {
+                transform: scale(1.5);
+            }
+        }
+
+        .round1 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            left: 45px;
+            border-radius: 50%;
+            background: red;
+        }
+
+        .round2 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: red;
+            left: 5px;
+        }
+
+        .square {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 20px;
+            left: 25px;
+            background: red;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="xin">
+        <div class="round1"></div>
+        <div class="round2"></div>
+        <div class="square"></div>
+    </div>
+</body>
+
+</html>
